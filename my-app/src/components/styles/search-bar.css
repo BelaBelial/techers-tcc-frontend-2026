@@ -1,0 +1,49 @@
+.search{
+    height: 110%;
+    background-color: var(--cor-fundo);
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    border: solid 2px var(--cor-primaria);
+    color: var(--cor-superficie);
+    border-radius: 20px;
+}
+
+img{
+    content: url(https://cdn-icons-png.flaticon.com/512/54/54481.png);
+    height: 100%;
+    width: 100%;
+}
+
+button{
+    height: 18px;
+    width: 27px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    border-radius: 20px;
+    padding-right: 10px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.box{
+    height: 100%;
+    width: 85%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    font-style: var(--main-font);
+    font-weight: 400;
+}
+
+.box:focus {
+  outline: none;
+  box-shadow: none;
+}
