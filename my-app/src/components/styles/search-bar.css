@@ -39,11 +39,15 @@ button:hover{
     border: none;
     background-color: var(--cor-fundo);
     color: var(--cor-primaria);
-    font-style: var(--main-font);
-    font-weight: 400;
+    font-family: var(--main-font);
+    font-weight: 500;
 }
 
 .box:focus {
   outline: none;
   box-shadow: none;
+}
+.box:hover{
+    letter-spacing: 1.5px;
+    transition: ease-in-out 0.5s;
 }

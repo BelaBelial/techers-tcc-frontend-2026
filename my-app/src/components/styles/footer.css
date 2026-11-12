@@ -1,0 +1,14 @@
+.footer{
+    height: 40px;
+    width: 100%;
+    font-size: 9px;
+    color: var(--cor-fundo);
+    background-color: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 2px var(--cor-primaria);
+    border-bottom: solid 1.5px var(--cor-primaria);
+    position: fixed;
+    bottom: 0;
+}

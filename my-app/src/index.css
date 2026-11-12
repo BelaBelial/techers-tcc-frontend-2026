@@ -21,13 +21,14 @@ main cores:
 /*as variaveis ja tao aqui entao podem ser usadas em qualquer ocasiao em qualquer arquivo*/
 :root {
     --cor-primaria: #bf0505; /*cor de destaque, que aparece nos botoes e q da a identidade*/
+    --cor-primaria-hover: #940404;
     --cor-fundo: #FAF9F6;
     --cor-fundo2: #F2F2F2;
     --cor-secundaria: #040404;
     --cor-superficie: #272727;
     
-    --cor-texto-w: var(--cor-secundaria);
-    --cor-texto-b: var(--cor-fundo);
+    --cor-texto-w: var(--cor-fundo);
+    --cor-texto-b: var(--cor-secundaria);
     --cor-texto-sec: #969393;
 
     --espacamento-padrao: 16px; 
