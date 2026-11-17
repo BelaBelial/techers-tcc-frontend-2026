@@ -1,16 +1,24 @@
 import Card from 'react-bootstrap/Card';
-import "./styles/art-card.css"
+import Button from 'react-bootstrap/Button';
+import "./styles/art-card.css";
+import { useNavigate } from 'react-router-dom'; //hook de navegacao
 
-export function ArticleCard () {
+export function ArticleCard ({id, title, author}) {
+    const navigate = useNavigate();
+
+    const ReadArticle = () => {
+        //redireciona p pagina passando o id do artigo
+        navigate(`/article/${id}`);
+    };
+
     return (
-        <Card style={{ width: '18rem' }}>
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
-                </Card.Text>
-                <Button className="go-to-art">Read Article</Button>
+        <Card style={{ width: '18rem' }} className='card-container'>
+            <Card.Body className='card-body'>
+                <Card.Title>{title}</Card.Title>
+                <Button className="go-to-art" onClick={ReadArticle}>Read Article</Button>
+                <span className='card-aut'>
+                    By: {author || "Unknown Author"}
+                </span>
             </Card.Body>
         </Card>
     );

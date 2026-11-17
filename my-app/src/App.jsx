@@ -9,8 +9,11 @@ function App() {
             <Routes>
 
                 {/* rota pai, todas as outras vem aqui dentro */}
-                <Route element={<Layout/>}>
-                    <Route path="/" element={<Home />} /> 
+                <Route path="/" element={<Layout/>}>
+                    <Route index element={<Home />} /> 
+
+                    {/* essa rota le o artigoo baseaddo no id */}
+                    {/* <Route path="article/:id" element={<ArticleView />}/> */}
                 </Route>
             </Routes>
         </BrowserRouter>
