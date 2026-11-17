@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./styles/search-bar.css"
-const path = "../assets/search-icon.webp";
+const icon_path = "../assets/search-icon.png";
 
 export function SearchBar(){
 
@@ -23,7 +23,10 @@ export function SearchBar(){
                 onChange={(e) => setTermo(e.target.value)}
             />
             
-            <button type="submit"><img src="" alt="" /></button>
+            <button type="submit">
+                {/* <img src="../assets/search-icon2.png" alt="Search" className="search-icon"/> */}
+                🔍︎
+            </button>
         </form>
     );
 }

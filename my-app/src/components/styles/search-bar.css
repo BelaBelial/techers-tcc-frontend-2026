@@ -1,31 +1,35 @@
 .search{
-    height: 110%;
+    background-color: var(--cor-fundo); 
+    color: var(--cor-superficie);
+    height: 40px;
     background-color: var(--cor-fundo);
-    width: 40%;
+    width: 100%;
+    max-width: 400px;
     display: flex;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-between; 
     border: solid 2px var(--cor-primaria);
-    color: var(--cor-superficie);
     border-radius: 20px;
+    padding: 0 8px;
 }
 
-img{
-    content: url(https://cdn-icons-png.flaticon.com/512/54/54481.png);
-    height: 100%;
-    width: 100%;
-}
+/* .search-icon{
+    height: 18px;
+    width: 18px;
+    object-fit: contain;
+} */
 
 button{
-    height: 18px;
-    width: 27px;
+    height: 30px;
+    width: 30px;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: inherit;
-    border-radius: 20px;
-    padding-right: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 20px;
 }
 button:hover{
     cursor: pointer;
@@ -33,19 +37,20 @@ button:hover{
 
 .box{
     height: 100%;
-    width: 85%;
-    padding: 10px;
-    border-radius: 20px;
+    flex: 1; /* O input ocupa todo o espaço disponível que sobra */
+    padding: 0 10px;
+    border-radius: 20px 0 0 20px;
     border: none;
-    background-color: var(--cor-fundo);
+    background-color: transparent; /* Evita conflito de fundo */
     color: var(--cor-primaria);
     font-family: var(--main-font);
     font-weight: 500;
+    outline: none;
 }
 
 .box:focus {
-  outline: none;
-  box-shadow: none;
+    outline: none;
+    box-shadow: none;
 }
 .box:hover{
     letter-spacing: 1.5px;

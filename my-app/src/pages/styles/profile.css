@@ -1,0 +1,96 @@
+.profile-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    min-height: 70vh;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    border: solid 1px var(--cor-primaria);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(251, 221, 221);
+    color: var(--cor-primaria);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    flex-shrink: 0; /*pro circulo nao amassar qnd a tela for menor*/
+}
+
+.profile-info h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.6rem;
+    color: var(--cor-secundaria);
+}
+
+.profile-password {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.prof-divider {
+    border: none;
+    height: 1px;
+    padding: 0;
+    background-color: var(--cor-secundaria);
+    margin: 30px 0;
+}
+
+.user-articles-section h3 {
+    margin-bottom: 24px;
+    font-size: 1.3rem;
+    color: var(--cor-secundaria);
+    font-weight: 600;
+}
+
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.empty-articles {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9fafb;
+    border: 2px dashed #d1d5db;
+    border-radius: 12px;
+    color: #6b7280;
+}
+
+.empty-articles p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.create-first-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.create-first-btn:hover {
+    background-color: var(--cor-primaria-hover);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
