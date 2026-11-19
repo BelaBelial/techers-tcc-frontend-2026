@@ -8,7 +8,7 @@ export function AddButton(){
 
     return (
         <div className="btn-container">
-            <button id="addbtn"><a href="/adicionarartigo" id="plus-icon">+</a></button>
+            <button id="addbtn"><a href="/add-article" id="plus-icon">+</a></button>
         </div>
     );
 }
