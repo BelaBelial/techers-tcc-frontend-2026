@@ -8,8 +8,10 @@ export function Header(){
             <h3 className="brand">Cosmic Bookhoard</h3>
             <SearchBar/>
             <nav className="nav">
-                <a href="#profile" className="nav-link person">𖨆</a> 
+                <a href="/profile" className="nav-link person">𖨆</a> 
                 <Link to="/" className="nav-link home-link">Home</Link>
+                <Link to="/login" className="nav-link home-link">LogIn</Link>
+                <Link to="/register" className="nav-link home-link">SignUp</Link>
             </nav>
         </header>
     );

@@ -1,10 +1,12 @@
 import "./styles/login.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export function Login(){
 
     const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const [senha, setsenha] = useState('');
     const [isLoading, setIsLoading] = useState(false);
 
     const navigate = useNavigate();
@@ -20,7 +22,7 @@ export function Login(){
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ username, password }),
+                body: JSON.stringify({ username, senha }),
             });
 
             const data = await response.json();
@@ -61,15 +63,15 @@ export function Login(){
                         />
                     </div>
                     <div className="data-container">
-                        <label htmlFor="password">Password</label>
+                        <label htmlFor="senha">Password</label>
                         <input 
                             type="password" 
                             className="fillin" 
-                            name="password"
+                            name="senha"
                             id="passoword"
-                            value={password}
+                            value={senha}
                             placeholder="Enter your password"
-                            onChange={(e) => setPassword(e.target.value)}
+                            onChange={(e) => setsenha(e.target.value)}
                             required
                         />
                     </div>
