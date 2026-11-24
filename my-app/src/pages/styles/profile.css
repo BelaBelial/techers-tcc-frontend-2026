@@ -94,3 +94,20 @@
     color: #ffffff;
     transform: translateY(-1px);
 }
+
+.logout-btn{
+    text-decoration: none;
+    font: var(--main-font);
+    color: var(--cor-primaria);
+    font-weight: 500;
+    border: solid 3px var(--cor-primaria);
+    border-radius: 20px;
+    background-color: var(--cor-superficie);
+    width: 80px;
+    padding: 15px;
+    transition: ease-in-out 0.3s;
+}
+
+.logout-btn:hover{
+    color: white;
+}

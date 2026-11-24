@@ -1,0 +1,18 @@
+.back-link{
+    text-decoration: none;
+    color: var(--cor-fundo);
+    background-color: var(--cor-superficie);
+    border-radius: 20px;
+    border: solid 3px var(--cor-primaria);
+    transition: 0.3s ease-in-out;
+}
+
+.back-link:hover{
+    background-color: black;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid var(--cor-primaria);
+    height: 1px;
+}

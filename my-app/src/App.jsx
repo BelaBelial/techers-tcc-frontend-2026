@@ -23,7 +23,7 @@ function App() {
                     <Route path='add-article' element={<AddArticle/>}/>
                 </Route>
                 <Route path='/login' element={<Login/>}></Route>
-                <Route path='/signup' element={<Signup/>}></Route>
+                <Route path='/register' element={<Signup/>}></Route>
             </Routes>
         </BrowserRouter>
     );
