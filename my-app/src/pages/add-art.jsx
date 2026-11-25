@@ -26,7 +26,7 @@ export function AddArticle() {
 
         try {
             //Ajuste a porta e rota exata de criação de artigos do seu backend
-            const response = await fetch('https://techers-tcc-2026-bbelial-1.onrender.com/articles/add-article', {
+            const response = await fetch('https://techers-tcc-2026-bbelial-1.onrender.com/add-article', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

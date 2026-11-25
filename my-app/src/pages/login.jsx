@@ -77,7 +77,7 @@ export function Login(){
                     </div>
                     <div className="adendos">
                         <span>Don't have an account?</span>
-                        <Link to="/signup">Sign Up</Link>
+                        <Link to="/register">Sign Up</Link>
                     </div>
                     <button type="submit" className="sub-but" value="Log In" disabled={isLoading}>
                         {isLoading ? 'Logging in...' : 'Log In'}
