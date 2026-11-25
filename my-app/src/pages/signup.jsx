@@ -15,7 +15,7 @@ export function Signup(){
         setIsLoading(true);
 
         try {
-            const response = await fetch("http://localhost:3000/users/register", {
+            const response = await fetch("https://techers-tcc-2026-bbelial-1.onrender.com/users/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

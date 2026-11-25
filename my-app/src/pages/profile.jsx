@@ -20,7 +20,7 @@ export function Profile() {
             const userId = parsedUser.id; // pega o id para colocar no perfil la
 
             // byscando dados doo perfil
-            fetch(`http://localhost:3000/users/profile/${username}`)
+            fetch(`https://techers-tcc-2026-bbelial-1.onrender.com/users/profile/${username}`)
                 .then((res) => res.json())
                 .then((data) => {
                     if (data.success) {
@@ -30,7 +30,7 @@ export function Profile() {
                 .catch((err) => console.error("Erro ao carregar perfil:", err));
 
             // busccar os artigos daquele user
-            fetch(`http://localhost:3000/articles/user/${userId}`)
+            fetch(`https://techers-tcc-2026-bbelial-1.onrender.com/articles/user/${userId}`)
                 .then((res) => res.json())
                 .then((data) => {
                     if (data.success) {

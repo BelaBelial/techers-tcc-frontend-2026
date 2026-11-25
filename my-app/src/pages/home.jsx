@@ -8,7 +8,7 @@ export function Home(){
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:3000/articles/home')
+        fetch('https://techers-tcc-2026-bbelial-1.onrender.com/articles/home')
             .then((res) => res.json())
             .then((data) => {
                 // O controller list devolve o array de artigos direto
