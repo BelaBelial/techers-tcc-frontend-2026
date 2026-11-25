@@ -8,7 +8,7 @@ export function Home(){
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        fetch('https://techers-tcc-2026-bbelial-1.onrender.com/articles/home')
+        fetch('https://cosmic-bookhoard.vercel.app/articles/home')
             .then((res) => res.json())
             .then((data) => {
                 // O controller list devolve o array de artigos direto

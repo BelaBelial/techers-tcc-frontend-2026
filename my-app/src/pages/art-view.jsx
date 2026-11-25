@@ -9,7 +9,7 @@ export function ArticleView() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch(`https://techers-tcc-2026-bbelial-1.onrender.com/articles/${id}`)
+        fetch(`https://cosmic-bookhoard.vercel.app/articles/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 if (data.success) {
