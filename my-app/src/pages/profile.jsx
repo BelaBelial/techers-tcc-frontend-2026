@@ -20,7 +20,7 @@ export function Profile() {
             const userId = parsedUser.id; // pega o id para colocar no perfil la
 
             // byscando dados doo perfil
-            fetch(`https://cosmic-bookhoard.vercel.app/users/profile/${username}`)
+            fetch(`https://techers-tcc-2026-bbelial-1.onrender.com/profile/${username}`)
                 .then((res) => res.json())
                 .then((data) => {
                     if (data.success) {
